@@ -31,20 +31,20 @@ show_banner
 echo ""
 # Solicitar informações do usuário
 show_step 1
-read -p "📧 Endereço de e-mail: " email
+read -p "📧 Informe um e-mail válido: " email
 echo ""
 show_step 2
-read -p "🌐 Dominio do Traefik (ex: traefik.seudominio.com): " traefik
+read -p "🌐 Subdomínio do Traefik (ex: traefik.seudomínio.com): " traefik
 echo ""
 show_step 3
 read -p "🔑 Senha do Traefik: " senha
 echo ""
 echo ""
 show_step 4
-read -p "🌐 Dominio do Portainer (ex: portainer.seudominio.com): " portainer
+read -p "🌐 Subdomínio do Portainer (ex: portainer.seudomínio.com): " portainer
 echo ""
 show_step 5
-read -p "🌐 Dominio do Edge (ex: edge.seudominio.com): " edge
+read -p "🌐 Subdomínio do Edge (ex: edge.seudomínio.com): " edge
 echo ""
 # Verificação de dados
 clear
