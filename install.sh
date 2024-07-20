@@ -37,7 +37,8 @@ show_step 2
 read -p "🌐 Dominio do Traefik (ex: traefik.seudominio.com): " traefik
 echo ""
 show_step 3
-read -s -p "🔑 Senha do Traefik: " senha
+read -p "🔑 Senha do Traefik: " senha
+echo ""
 echo ""
 show_step 4
 read -p "🌐 Dominio do Portainer (ex: portainer.seudominio.com): " portainer
