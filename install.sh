@@ -31,29 +31,29 @@ show_banner
 echo ""
 # Solicitar informações do usuário
 show_step 1
-read -p "📧 Insira um e-mail valido: " email
+read -p "📧 Insira um e-mail válido: " email
 echo ""
 show_step 2
-read -p "🌐 Subdominio do Traefik (ex: traefik.seudominio.com): " traefik
+read -p "🌐 Subdomínio do Traefik (ex: traefik.seudominio.com): " traefik
 echo ""
 show_step 3
 read -s -p "🔑 Senha criptografada do Traefik: " senha
 echo ""
 echo ""
 show_step 4
-read -p "🌐 Subdominio do Portainer (ex: portainer.seudominio.com): " portainer
+read -p "🌐 Subdomínio do Portainer (ex: portainer.seudominio.com): " portainer
 echo ""
 show_step 5
-read -p "🌐 Subdominio do Edge (ex: edge.seudominio.com): " edge
+read -p "🌐 Subdomínio do Edge (ex: edge.seudominio.com): " edge
 echo ""
 # Verificação de dados
 clear
 echo ""
-echo "📧 Seu E-mail esta certo? $email"
-echo "🌐 Seu dominio do Traefik esta certo? $traefik"
+echo "📧 Seu E-mail está certo? $email"
+echo "🌐 Seu domínio do Traefik está certo? $traefik"
 echo "🔑 Senha do Traefik: ********"
-echo "🌐 Seu dominio do Portainer esta certo? $portainer"
-echo "🌐 Seu dominio do Edge esta certo? $edge"
+echo "🌐 Seu domínio do Portainer está certo? $portainer"
+echo "🌐 Seu domínio do Edge está certo? $edge"
 echo ""
 read -p "Se as informações estiverem corretas aperte 'y', se alguma informação estiver errada aperte 'n'? (y/n): " confirma1
 if [ "$confirma1" == "y" ]; then
