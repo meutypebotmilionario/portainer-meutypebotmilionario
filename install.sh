@@ -55,7 +55,7 @@ echo "🔑 Senha do Traefik: ********"
 echo "🌐 Seu domínio do Portainer está certo? $portainer"
 echo "🌐 Seu domínio do Edge está certo? $edge"
 echo ""
-read -p "Se as informações estiverem corretas aperte 'y', se alguma informação estiver errada aperte 'n'? (y/n): " confirma1
+read -p "Se as informações estiverem corretas aperte 'y', se alguma estiver errada aperte 'n'? (y/n): " confirma1
 if [ "$confirma1" == "y" ]; then
   clear
   #########################################################
