@@ -30,21 +30,22 @@ clear
 show_banner
 echo ""
 # Solicitar informações do usuário
-echo -e "\e[32mPasso \e[33m1/5\e[0m"
-read -p "Endereço de e-mail: " email
+show_step 1
+read -p "📧 Endereço de e-mail: " email
 echo ""
-echo -e "\e[32mPasso \e[33m2/5\e[0m"
-read -p "Dominio do Traefik (ex: traefik.seudominio.com): " traefik
+show_step 2
+read -p "🌐 Dominio do Traefik (ex: traefik.seudominio.com): " traefik
 echo ""
-echo -e "\e[32mPasso \e[33m3/5\e[0m"
-read -p "Senha do Traefik: " senha
+show_step 3
+read -s -p "🔑 Senha do Traefik: " senha
 echo ""
-echo -e "\e[32mPasso \e[33m4/5\e[0m"
-read -p "Dominio do Portainer (ex: portainer.seudominio.com): " portainer
 echo ""
-echo -e "\e[32mPasso \e[33m5/5\e[0m"
-read -p "Dominio do Edge (ex: edge.seudominio.com): " edge
-echo "
+show_step 4
+read -p "🌐 Dominio do Portainer (ex: portainer.seudominio.com): " portainer
+echo ""
+show_step 5
+read -p "🌐 Dominio do Edge (ex: edge.seudominio.com): " edge
+echo ""
 # Verificação de dados
 clear
 echo ""
